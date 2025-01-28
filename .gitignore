@@ -1,0 +1,14 @@
+# Ignore system files and sensitive directories
+*.log
+*.ini
+*.dat
+.vscode/
+.bash_history
+AppData/
+NTUSER.*
+OneDrive/
+Desktop/
+Downloads/
+Music/
+Pictures/
+Videos/

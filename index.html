@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar">
+    <a href="#" class="navbar-brand">codeStackr_</a>
+    <ul class="navbar-links main-item-list">
+      <li><a href="#about" class="navlinks">About</a></li>
+      <li><a href="#skills" class="navlinks">Skills & Tools</a></li>
+      <li><a href="#projects" class="navlinks">Projects</a></li>
+    </ul>
+    <a href="#letstalk" class="nav-btn navbar-links" type="button">Let's Talk</a>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <!-- Hamburger button -->
+      <div class="mobile-menu-toggle" role="button" aria-expanded="false" aria-controls="mobile-menu-items"
+        aria-label="Open mobile menu" tabindex="0">
+        <i class="fas fa-bars fa-2x"></i>
+      </div>
+
+      <!-- Mobile Menu Items -->
+      <div class="mobile-menu-items">
+        <ul class="mobile-menu-list">
+          <li><a href="#about" class="mobile-menu-links">About</a></li>
+          <li><a href="#skills" class="mobile-menu-links">Skills & Tools</a></li>
+          <li><a href="#projects" class="mobile-menu-links">Projects</a></li>
+          <li><a href="#letstalk" class="mobile-menu-links">Let's Talk</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-container hero-flex">
+      <div class="social-links">
+        <ul>
+          <li><a href="mailto:prosperjohn143@gmail.com"><i class="fa-brands fa-medium"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/john-prosper-a1198a341/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+          <li><a href="https://www.instagram.com/prosperjohn143?igsh=cGZuZ2luNWNyaTNl"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="https://github.com/codeStackr007"><i class="fa-brands fa-github"></i></a></li>
+        </ul>
+      </div>
+      <div class="hero-content">
+        <h1 class="hero-heading">Hi! I'm <br> John Prosper</h1>
+        <p class="hero-description">
+          A passionate junior developer learning to build efficient, user-friendly websites. I'm dedicated to mastering
+          web development tools and creating responsive, interactive designs that solve real-world problems and build
+          user-friendly digital experiences.
+        </p>
+        <div class="hero-btn">
+          <a href="#" class="btn btn-hire">Hire Me</a>
+          <a href="#projects" class="btn btn-projects" id="project">Projects<i class="fa fa-arrow-up arrow"></i></a>
+        </div>
+      </div>
+      <div class="hero-img-container">
+        <img src="/images/ME.jpg" alt="John Prosper">
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT SECTION -->
+  <section class="about">
+    <div class="abt-container" id="about">
+      <div class="abt-section-header">
+        <h1 class="abt-h1">About Me</h1>
+        <div class="abt-heading-border"></div>
+      </div>
+      <div class="abt-flex">
+        <div class="abt-img-container">
+          <img class="abt-img" src="/images/ME2.jpg" alt="">
+        </div>
+        <div class="abt-content">
+          <p class="abt-p abt-border-left">
+            I am a passionate and determined junior web developer with a deep love for technology and problem-solving.
+            My journey into web development began with a curiosity about how websites function and a desire to create
+            platforms that improve user experiences and address real-world challenges.
+          </p>
+          <p class="abt-p abt-border-left">
+            I am committed to mastering modern web development tools and frameworks, including HTML, CSS, Bootstrap, and
+            JavaScript, while steadily building expertise in technologies like Sass and SCSS. My focus lies in designing
+            and developing responsive, interactive, and accessible websites that prioritize efficiency and user satisfaction.
+          </p>
+          <p class="abt-p abt-border-left">
+            Throughout my journey, I’ve faced challenges that have only fueled my determination to learn and grow. I
+            believe perseverance and consistent practice are key to achieving mastery, and I take every opportunity to
+            refine my skills and expand my knowledge. I am excited to connect with others who share my passion for
+            technology and innovation, and I am always open to collaborations.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS & TOOLS SECTION -->
+  <section class="skills">
+    <div class="skills-container">
+      <div class="skills-section-header" id="skills">
+        <h1 class="skills-h1">Skills & Tools</h1>
+        <div class="skills-heading-border"></div>
+      </div>
+      <div class="skills-content">
+        <div class="skill-item HTML">
+          <i class="fab fa-html5 skills-icon"></i>
+          <h3>HTML5</h3>
+        </div>
+        <div class="skill-item CSS3">
+          <i class="fab fa-css3-alt skills-icon"></i>
+          <h3>CSS3</h3>
+        </div>
+        <div class="skill-item JAVASCRIPT">
+          <i class="fab fa-js skills-icon"></i>
+          <h3>JavaScript</h3>
+        </div>
+        <div class="skill-item BOOTSTRAP">
+          <i class="fab fa-bootstrap skills-icon"></i>
+          <h3>Bootstrap</h3>
+        </div>
+        <div class="skill-item SASS">
+          <i class="fab fa-sass skills-icon"></i>
+          <h3>Sass</h3>
+        </div>
+        <div class="skill-item GIT">
+          <i class="fab fa-git-alt skills-icon"></i>
+          <h3>Git</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section class="projects">
+    <div class="projects-container">
+      <div class="projects-header" id="projects">
+        <h1 class="projects-h1">Projects</h1>
+        <div class="projects-heading-border"></div>
+        <p class="projects-p">
+          Showcasing my projects and accomplishments.<br>
+          Here are a few of my top projects, highlighting my skills and experience in Web Development.
+        </p>
+      </div>
+      <div class="projects-content">
+        <div class="projects-card">
+          <img src="/images/Vera.png" alt="Vera Project">
+          <h2>Vera | Software Solutions Website</h2>
+          <p>
+            Vera is a fictional software solutions site created with HTML, custom SCSS, SASS, Bootstrap 5, and custom
+            JavaScript.
+          </p>
+          <button class="btn preview vera-preview"
+            onclick="window.open('https://vera-website-jade.vercel.app/', '_blank')">
+            <i class="fa fa-eye"></i> Preview
+          </button>
+        </div>
+
+        <div class="projects-card">
+          <img src="/images/corso.png" alt="Corso Project">
+          <h2>Corso | Training Website</h2>
+          <p>
+            Corso is a fictional training website designed with HTML, custom SCSS, SASS, Bootstrap 5, and JavaScript. It
+            offers a modern and engaging platform for learning and development.
+          </p>
+          <button class="btn preview" onclick="window.open('https://corso-website.vercel.app/', '_blank')">
+            <i class="fa fa-eye"></i> Preview
+          </button>
+        </div>
+        <div class="projects-card">
+          <img src="/images/modern-form.png" alt="Modern Form Project">
+          <h2>Modern Sign In | Sign Up Form</h2>
+          <p>The Modern Learnify Login and Sign Up page is a fictional project that provides a sleek, intuitive interface for seamless account creation and login. Developed using HTML, CSS, and JavaScript, it ensures a smooth user experience.</p>
+          <button class="btn preview modern-form-preview" onclick="window.open('https://modern-login-sign-up-page.vercel.app/', '_blank')"><i class="fa fa-eye"></i> Preview</button>
+        </div>
+  
+        <div class="projects-card">
+          <img src="/images/clock.png" alt="Digital Clock Project">
+          <h2>Digital Clock</h2>
+          <p>The Digital Clock project is a fictional showcase of a real-time clock with a sleek design, developed using HTML, CSS, and JavaScript. It provides an accurate and visually appealing way to display the current time.</p>
+          <button class="btn preview clock-preview" onclick="window.open('https://digital-clock-psi-flax.vercel.app/', '_blank')"><i class="fa fa-eye"></i> Preview</button>
+        </div>
+  
+        <div class="projects-card">
+          <img src="/images/education.png" alt="EduWeb Project">
+          <h2>EduWeb | Online Learning Platform</h2>
+          <p>EduWeb is a fictional comprehensive online learning platform designed with HTML, CSS, and JavaScript. It offers a user-friendly interface for students and educators to engage in interactive learning experiences.</p>
+          <button class="btn preview project5-preview" onclick="window.open('https://eduweb-education-website.vercel.app/', '_blank')"><i class="fa fa-eye"></i> Preview</button>
+        </div>
+  
+        <div class="projects-card">
+          <img src="/images/social-media.png" alt="SocialBook Project">
+          <h2>SocialBook | Social Media Website</h2>
+          <p>SocialBook: A responsive, light-themed social media platform designed to connect users in a vibrant and engaging way. Built with HTML, CSS, and JavaScript.</p>
+          <button class="btn preview project6-preview" onclick="window.open('https://responsive-social-media-website-hazel.vercel.app/', '_blank')"><i class="fa fa-eye"></i> Preview</button>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- LET'S TALK SECTION -->
+<section class="letstalk">
+  <div class="letstalk-container" id="letstalk">
+    <div class="letstalk-section-header">
+      <h1 class="letstalk-h1">Let's Talk</h1>
+      <div class="letstalk-heading-border"></div>
+      <p>
+        If you'd like to collaborate on projects or have any questions,<br> 
+        feel free to reach out to me using the form below.
+      </p>
+    </div>
+
+    <div class="form-container">
+      <form 
+        action="https://formspree.io/f/mpwwvyke" 
+        method="POST" 
+        class="form-container"
+      >
+        <label>
+          <input type="text" name="name" placeholder="Your Name" required>
+        </label>
+        <label>
+          <input type="email" name="email" placeholder="Your Email" required>
+        </label>
+        <label>
+          <textarea name="message" placeholder="Your Message" required></textarea>
+        </label>
+        <button type="submit" class="btn-send">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Footer Social Links -->
+    <ul class="footer-social-links">
+      <li>
+        <a href="mailto:prosperjohn143@gmail.com" target="_blank">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/john-prosper-a1198a341/" target="_blank">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/prosperjohn143?igsh=cGZuZ2luNWNyaTNl" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/codeStackr007" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+    </ul>
+
+    <!-- Footer Content -->
+    <div class="footer-content">
+      <p>
+        © <span id="currentYear"></span> Minimal Portfolio Website | 
+        All Rights Reserved. | Designed by <b>codeStackr_</b>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
