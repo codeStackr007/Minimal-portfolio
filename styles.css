@@ -37,7 +37,7 @@ body {
 }
 
 .navbar.navbar-scroll {
-  backdrop-filter: blur(6px); /* Add blur effect */
+  backdrop-filter: blur(10px); /* Add blur effect */
   background-color: rgba(29, 28, 28, 0.8); /* Semi-transparent background */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
 }
@@ -117,6 +117,7 @@ body {
 }
 
 /* ####################################### */
+/* Hero Styles */
 /* Hero Section */
 .hero {
   padding-top: 100px; /* Add padding to prevent overlap with the navbar */
@@ -270,7 +271,7 @@ body {
   }
 
   .hero-description {
-    font-size: 0.65rem;
+    font-size: 0.9rem;
   }
 
   .btn {
@@ -278,69 +279,7 @@ body {
     font-size: 0.9rem;
   }
 }
-/* Add this to your existing mobile media queries */
-@media (max-width: 768px) {
-  .hero-description {
-    font-size: 0.9rem; /* Reduced from ~1.2rem */
-    line-height: 1.6; /* Tighter but still readable */
-    margin-bottom: 1.5rem; /* Slightly reduced spacing */
-  }
 
-  .hero-btn {
-    gap: 15px; /* Reduced from 20px */
-  }
-
-  .btn {
-    padding: 8px 16px; /* Reduced from 10px 20px */
-    font-size: 0.9rem; /* Slightly smaller text */
-    border-width: 1.5px; /* Thinner border for smaller buttons */
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-description {
-    font-size: 0.85rem; /* Slightly smaller for tiny screens */
-  }
-
-  .btn {
-    padding: 6px 14px; /* More compact but still tappable */
-    font-size: 0.85rem;
-  }
-}
-
-
-
-
-
-/* Improved fluid scaling */
-.hero-heading {
-  font-size: clamp(1.75rem, 4vw, 2.5rem); /* Auto-adjusts between 1.75rem-2.5rem */
-}
-
-.hero-description {
-  font-size: clamp(0.875rem, 2vw, 1rem); /* 0.875rem-1rem */
-}
-
-/* Better mobile buttons */
-@media (max-width: 768px) {
-  .hero-btn {
-    flex-direction: column;
-    gap: 12px;
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  .btn {
-    padding: 10px 18px; /* Balanced padding */
-    font-size: 0.925rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .btn {
-    padding: 8px 16px;
-  }
-}
 
 /* About Section Styles */
 .abt-flex {
@@ -777,19 +716,24 @@ body {
 
 /* Navbar Styles for Mobile */
 @media (max-width: 768px) {
+  .navbar {
+    padding: 1.1rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px); /* Add blur effect */
+    background-color: rgba(29, 28, 28, 0.8); /* Semi-transparent background */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+  }
+
   .navbar-links {
-    display: none;
+    display: none; /* Hide desktop links on mobile */
   }
 
   .navbar .mobile-menu,
   .navbar .mobile-menu-toggle {
-    display: block;
-  }
-
-  .navbar {
-    padding: 1.1rem;
-    width: 100%;
-    z-index: 1000;
+    display: block; /* Show mobile menu toggle */
   }
 
   .mobile-menu-toggle {
@@ -799,21 +743,19 @@ body {
   }
 
   .mobile-menu-items {
-    display: block; /* Always visible but off-screen */
-    position: fixed;
-    top: 0;
-    left: -100%; /* Start off-screen */
-    width: 80%; /* Adjust width as needed */
-    height: 100vh;
+    display: none; /* Hide mobile menu by default */
+    position: absolute;
+    top: 100%; /* Position below the navbar */
+    left: 0;
+    width: 100%;
     background-color: rgba(29, 28, 28, 0.9); /* Semi-transparent background */
-    backdrop-filter: blur(10px); /* Blur effect */
+    backdrop-filter: blur(10px); /* Add blur effect */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
     padding: 1rem;
-    transition: left 0.3s ease; /* Smooth slide-in transition */
   }
 
   .mobile-menu-items.active {
-    left: 0; /* Slide in */
+    display: block; /* Show mobile menu when active */
   }
 
   .mobile-menu-list {
