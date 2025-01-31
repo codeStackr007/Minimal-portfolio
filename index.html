@@ -22,23 +22,17 @@
 <body>
   <nav class="navbar">
     <a href="#" class="navbar-brand">codeStackr_</a>
-    <ul class="navbar-links main-item-list">
+    <ul class="navbar-links">
       <li><a href="#about" class="navlinks">About</a></li>
       <li><a href="#skills" class="navlinks">Skills & Tools</a></li>
       <li><a href="#projects" class="navlinks">Projects</a></li>
     </ul>
-    <a href="#letstalk" class="nav-btn navbar-links" type="button">Let's Talk</a>
-
-    <!-- Mobile Menu -->
+    <a href="#letstalk" class="nav-btn">Let's Talk</a>
     <div class="mobile-menu">
-      <!-- Hamburger button -->
-      <div class="mobile-menu-toggle" role="button" aria-expanded="false" aria-controls="mobile-menu-items"
-        aria-label="Open mobile menu" tabindex="0">
+      <div class="mobile-menu-toggle" role="button" aria-expanded="false" aria-controls="mobile-menu-items" aria-label="Open mobile menu" tabindex="0">
         <i class="fas fa-bars fa-2x"></i>
       </div>
-
-      <!-- Mobile Menu Items -->
-      <div class="mobile-menu-items">
+      <div class="mobile-menu-items" id="mobile-menu-items">
         <ul class="mobile-menu-list">
           <li><a href="#about" class="mobile-menu-links">About</a></li>
           <li><a href="#skills" class="mobile-menu-links">Skills & Tools</a></li>
@@ -48,9 +42,13 @@
       </div>
     </div>
   </nav>
+  
+  <!-- Optional: Current Year Element -->
+  <div id="currentYear"></div>
 
   <header class="hero">
     <div class="hero-container hero-flex">
+      <!-- Social Links on the Left (Desktop) -->
       <div class="social-links">
         <ul>
           <li><a href="mailto:prosperjohn143@gmail.com"><i class="fa-brands fa-medium"></i></a></li>
@@ -59,6 +57,8 @@
           <li><a href="https://github.com/codeStackr007"><i class="fa-brands fa-github"></i></a></li>
         </ul>
       </div>
+  
+      <!-- Hero Content in the Middle -->
       <div class="hero-content">
         <h1 class="hero-heading">Hi! I'm <br> John Prosper</h1>
         <p class="hero-description">
@@ -71,8 +71,10 @@
           <a href="#projects" class="btn btn-projects" id="project">Projects<i class="fa fa-arrow-up arrow"></i></a>
         </div>
       </div>
+  
+      <!-- Hero Image on the Right (Desktop) -->
       <div class="hero-img-container">
-        <img src="images/ME.jpg" alt="John Prosper">
+        <img src="/images/ME.jpg" alt="John Prosper">
       </div>
     </div>
   </header>
