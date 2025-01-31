@@ -241,6 +241,162 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+.hero {
+  padding-top: 80px;
+}
+
+.hero-container {
+  margin: 0 auto;
+  max-width: 1250px;
+  padding: 20px;
+}
+
+.hero-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.hero-img-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-description {
+  line-height: 1.8;
+  margin-bottom: 30px; /* Removed border-left */
+}
+
+.hero-btn {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-hire {
+  background-color: coral;
+  color: #fff;
+}
+
+.btn-projects {
+  background-color: transparent;
+  color: coral;
+  border: 2px solid coral;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Social Links Styles */
+.social-links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.social-links a {
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 36px;
+  width: 36px;
+  text-align: center;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  box-shadow: 0 3px 5px rgba(15, 6, 3, 0.5);
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  background-color: coral;
+  transform: translateY(-5px);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-links {
+      display: none;
+  }
+
+  .mobile-menu {
+      display: block;
+  }
+
+  .hero-flex {
+      flex-direction: column;
+      gap: 30px;
+  }
+
+  .hero-img-container {
+      order: 1; /* Image first on mobile */
+  }
+
+  .hero-content {
+      order: 2; /* Content second on mobile */
+      text-align: center;
+  }
+
+  .hero-btn {
+      justify-content: center;
+  }
+
+  .social-links {
+      order: 3; /* Social links last on mobile */
+      margin-top: 20px;
+  }
+
+  .social-links ul {
+      flex-direction: row;
+      justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-heading {
+      font-size: 2rem;
+  }
+
+  .hero-description {
+      font-size: 0.9rem;
+  }
+
+  .btn {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+  }
+}
+
+
 /* About Section Styles */
 .abt-flex {
   display: flex;
