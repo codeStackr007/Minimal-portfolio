@@ -34,6 +34,9 @@ body {
   background-color: #1d1c1c;
   z-index: 1000;
   transition: all 0.5s ease;
+  background-color: rgba(29, 28, 28, 0.7); /* Glass effect background */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .navbar-brand {
@@ -918,7 +921,11 @@ body {
   .abt-content {
     text-align: justify;
     font-size: 1rem; /* Increase font size for better readability */
-    padding: 0 1rem;
+    padding: 0 0.6rem;
+  }
+
+  .abt-border-left {
+    border: none;
   }
   
   .abt-section-header h1 {
