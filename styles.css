@@ -988,14 +988,7 @@ body {
 .form-container {
   max-width: 600px;
   margin: 0 auto;
-  padding: 20px;
-}
-
-.form-container form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  font-family: inherit;
+  /* padding: 20px; */
 }
 
 .form-container input,
@@ -1086,12 +1079,6 @@ body {
 
 
 /* Projects Section Refinement */
-/* .projects-container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 3rem 1.5rem;
-}
-
 .projects-header {
   max-width: 750px;
   text-align: center;
@@ -1124,8 +1111,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
   border-radius: 10px;
-  margin: 0 auto;
-} */
+  /* margin: 0 auto; */
+}
 
 .projects-card img {
   width: 100%;
@@ -1189,4 +1176,3 @@ body {
   }
 
 }
-
