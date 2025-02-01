@@ -1086,7 +1086,7 @@ body {
 
 
 /* Projects Section Refinement */
-.projects-container {
+/* .projects-container {
   max-width: 900px;
   margin: 0 auto;
   padding: 3rem 1.5rem;
@@ -1125,7 +1125,7 @@ body {
   justify-content: space-between;
   border-radius: 10px;
   margin: 0 auto;
-}
+} */
 
 .projects-card img {
   width: 100%;
