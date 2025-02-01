@@ -1171,7 +1171,7 @@ body {
 /* Responsive Adjustments for Projects Section */
 @media (max-width: 768px) {
   .projects-container {
-    padding: 2rem 1rem;
+    padding: 2rem 0rem;
   }
 
   .projects-card {
@@ -1182,6 +1182,10 @@ body {
   .projects-card img {
     width: 100%;
     border-radius: 8px;
+  }
+
+  .projects-container .projects-header p {
+    font-size: 1rem;
   }
 
 }
