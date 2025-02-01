@@ -981,7 +981,7 @@ body {
 .form-container {
   max-width: 600px;
   margin: 0 auto;
-  /* padding: 20px; */
+  padding: 20px;
 }
 
 .form-container form {
@@ -1117,7 +1117,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   border-radius: 10px;
-  /* margin: 0 auto; */
+  margin: 0 auto;
 }
 
 .projects-card img {
