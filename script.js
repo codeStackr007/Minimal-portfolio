@@ -1,7 +1,8 @@
-// Toggle mobile menu with slide-in animation
+
 document.addEventListener('DOMContentLoaded', function () {
   const toggleButton = document.querySelector('.navbar .mobile-menu-toggle');
   const mobileMenu = document.querySelector('.navbar .mobile-menu-items');
+  const menuLinks = document.querySelectorAll('.navbar .mobile-menu-items a'); // Select all links in the mobile menu
 
   // Toggle menu when hamburger icon is clicked
   toggleButton.addEventListener('click', function (e) {
@@ -14,6 +15,13 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!mobileMenu.contains(e.target) && !toggleButton.contains(e.target)) {
       mobileMenu.classList.remove('active'); // Slide out
     }
+  });
+
+  // Close mobile menu when a link is clicked
+  menuLinks.forEach(function (link) {
+    link.addEventListener('click', function () {
+      mobileMenu.classList.remove('active');
+    });
   });
 });
 
